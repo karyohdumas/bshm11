@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>BSHM</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="assets/logo-white.png" alt="logo" class="logo-white" />
+            <img src="assets/logo-dark.png" alt="logo" class="logo-dark" />
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#cart">Food Cart</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn"><i class="ri-search-line"></i></button>
+        <button class="btn"><a href="#menu"><i class="ri-shopping-bag-line"></i></a></button>
+      </div>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <div class="image">
+          <img src="assets/tin.png" alt="header" />
+        </div>
+        <div class="header__image__footer">
+          <img src="assets/user-2.jpg" alt="user" />
+          <p>It delivers convenience and flavor with lightning-fast delivery</p>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="header__top">
+          <span><img src="assets/header.png" alt="header" /></span>
+          <h2>Eat Healthy, Stay Healthy</h2>
+        </div>
+        <h1>Kusina sa <span>Tagbina</span></h1><h2 style="padding-bottom: 70px;">Authentic Filipino Flavors, Cooked with Heart</h2>
+        <!-- <p>
+          Be the first to experience hassle-free delivery and easy pick-up
+          options designed to save your time and satisfy your cravings!
+        </p> -->
+        <div class="header__btns">
+          <a href="#menu">
+          <button class="btn">
+            Order Now
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+          </a>
+          <button class="btn">Book A Table</button>
+        </div>
+        <div class="header__flex">
+          <div class="header__card">
+            <img src="assets/adobo.jpg" alt="header__content" />
+            <h4>Chicken Adobo</h4>
+          </div>
+          <div class="header__card">
+            <img src="assets/sinigang.jpg" alt="header__content" />
+            <h4>Sinigang na Baboy</h4>
+          </div>
+          <div class="header__card">
+            <img src="assets/humba.jpg" alt="header__content" />
+            <h4>Pork Humba</h4>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container menu__container" id="menu">
+      <h2 class="section__header">Our Popular <span>Dishes</span></h2>
+      <div class="menu__grid">
+        <div class="menu__card">
+          <img src="assets/adobo.jpg" alt="menu" />
+          <h4>Chicken Adobo</h4>
+          <p>
+            A savory and tender slow-cooked chicken dish simmered in soy sauce, vinegar, and aromatic spices, delivering a classic and comforting adobo flavor.
+          </p>
+          <div class="menu__card__footer">
+            <h3>₱50.99</h3>
+            <button class="btn add-to-cart"
+                data-name="Chicken Adobo"
+                data-price="50.99"
+                data-img="assets/adobo.jpg"
+              >Add To Cart</button>
+          </div>
+        </div>
+        <div class="menu__card">
+          <img src="assets/sinigang.jpg" alt="menu" />
+          <h4>Sinigang na Baboy</h4>
+          <p>
+            A hearty and tangy pork soup simmered with fresh vegetables in a rich tamarind broth, offering a warm and comforting Filipino sour-flavored classic.
+          </p>
+          <div class="menu__card__footer">
+            <h3>₱75.49</h3>
+            <button class="btn add-to-cart"
+                data-name="Sinigang na Baboy"
+                data-price="50.99"
+                data-img="assets/sinigang.jpg"
+              >Add To Cart</button>
+          </div>
+        </div>
+        <div class="menu__card">
+          <img src="assets/humba.jpg" alt="menu" />
+          <h4>Pork Humba</h4>
+          <p>
+            A savory braised pork dish cooked with soy sauce, brown sugar, garlic, and spices, garnished with boiled eggs, delivering a sweet and flavorful Filipino classic.
+          </p>
+          <div class="menu__card__footer">
+            <h3>₱30.99</h3>
+            <button class="btn add-to-cart"
+                data-name="Pork Humba"
+                data-price="50.99"
+                data-img="assets/humba.jpg"
+              >Add To Cart</button>
+          </div>
+        </div>
+        <div class="menu__card">
+          <img src="assets/tinola.jpg" alt="menu" />
+          <h4>Tinolang Manok</h4>
+          <p>
+            A comforting Filipino chicken soup simmered with fresh ginger, green papaya, and chili leaves, delivering a warm and soothing flavor perfect for any meal.
+          </p>
+          <div class="menu__card__footer">
+            <h3>₱30.99</h3>
+            <button class="btn add-to-cart"
+                data-name="Tinolang Manok"
+                data-price="50.99"
+                data-img="assets/tinola.jpg"
+              >Add To Cart</button>
+          </div>
+        </div>
+        <div class="menu__card">
+          <img src="assets/bicol.jpg" alt="menu" />
+          <h4>Bicol Express</h4>
+          <p>
+            A rich and spicy pork dish cooked in creamy coconut milk with chili peppers, offering a bold and flavorful Filipino classic that excites the taste buds.
+          </p>
+          <div class="menu__card__footer">
+            <h3>₱30.99</h3>
+            <button class="btn add-to-cart"
+                data-name="Bicol Express"
+                data-price="50.99"
+                data-img="assets/bicol.jpg"
+              >Add To Cart</button>
+          </div>
+        </div>
+        <div class="menu__card">
+          <img src="assets/sisig.jpg" alt="menu" />
+          <h4>Pork Sisig</h4>
+          <p>
+            A savory and crispy chopped pork dish, seasoned with onions, spices, and calamansi, providing a zesty and flavorful Filipino favorite perfect with steamed rice.
+          </p>
+          <div class="menu__card__footer">
+            <h3>₱30.99</h3>
+            <button class="btn add-to-cart"
+                data-name="Pork Sisig"
+                data-price="50.99"
+                data-img="assets/sisig.jpg"
+              >Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="menu__btn">
+        <button class="btn">
+          See All Dishes
+          <span><i class="ri-arrow-right-line"></i></span>
+        </button>
+      </div> -->
+    </section>
+      
+
+
+
+
+
+    <section class="location" id="location">
+      <div class="section__container location__container">
+        <h2 class="section__header">Our <span>Location</span></h2>
+
+        <div class="map__wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503.91584476976866!2d126.1700930215748!3d8.45319382109388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fd7ee155555555%3A0x123456789abcdef!2sBiSLIG%20iCENTER%20-%20Tagbina!5e1!3m2!1sen!2sph!4v1708931111000!5m2!1sen!2sph"
+          width="100%"
+          height="450"
+          style="border:0; border-radius: 20px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        </div>
+
+        <p class="location__text">
+          We are located at <b>Poblacion, Tagbina, Surigao del Sur</b>, right beside
+          <b>Palawan Pawnshop</b>. Easily track us on Google Maps for smooth and fast access!
+        </p>
+      </div>
+    </section>
+
+
+
+    <!-- <section class="service" id="service">
+      <div class="section__container service__container">
+        <h2 class="section__header">How Does It <span>Works</span></h2>
+        <div class="service__grid">
+          <div class="service__card">
+            <div>
+              <img src="assets/service-1.png" alt="service" />
+            </div>
+            <h4>Chose Your Meals</h4>
+            <p>
+              Browse through our delicious menu filled with a variety of dishes
+              and select your favorites effortlessly to satisfy your cravings.
+            </p>
+            <a href="#">
+              Read More
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+          <div class="service__card">
+            <div>
+              <img src="assets/service-2.png" alt="service" />
+            </div>
+            <h4>Track Your Order</h4>
+            <p>
+              Keep an eye on your meal with real-time updates from the kitchen
+              to your location, ensuring a seamless and transparent experience.
+            </p>
+            <a href="#">
+              Read More
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+          <div class="service__card">
+            <div>
+              <img src="assets/service-3.png" alt="service" />
+            </div>
+            <h4>Chose Your Meals</h4>
+            <p>
+              Experience ultimate convenience with easy pick-up options or
+              doorstep delivery, bringing your favorite meals straight to you.
+            </p>
+            <a href="#">
+              Read More
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="banner" id="cart">
+      <div class="section__container banner__container">
+        <div class="banner__image">
+          <img src="assets/banner.jpg" alt="banner" />
+        </div>
+        <div class="banner__content">
+          <h2 class="section__header">
+            Eat Healthy, Stay <span>Healthy</span>
+          </h2>
+          <p>
+            At Food Plaza, we believe that good food is the foundation of a
+            healthy life. Our meals are crafted with fresh ingredients and
+            balanced nutrition, helping you maintain a healthy lifestyle while
+            enjoying delicious flavors.
+          </p>
+          <div class="banner__btn">
+            <button class="btn">
+              Read More
+              <span><i class="ri-arrow-right-line"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container customer__container">
+      <div class="customer__image">
+        <img src="assets/customer.png" alt="customer" />
+      </div>
+      <div class="customer__content">
+        <h2 class="section__header">Customers <span>Reaction</span></h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="customer__card">
+                <div class="customer__card__header">
+                  <div>Verified Purchase</div>
+                  <span>23 Oct 2024</span>
+                </div>
+                <p>
+                  This is my go-to choice for healthy meals on busy days. I
+                  appreciate how they balance flavor with nutrition, making it
+                  easy to stick to my healthy eating goals while still enjoying
+                  delicious food.
+                </p>
+                <div class="customer__card__footer">
+                  <img src="assets/customer-1.jpg" alt="customer" />
+                  <div>
+                    <h4>Sarah Johnson</h4>
+                    <h5>Nutritionist</h5>
+                    <div class="customer__rating">
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-half-fill"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="customer__card">
+                <div class="customer__card__header">
+                  <div>Verified Purchase</div>
+                  <span>15 Nov 2024</span>
+                </div>
+                <p>
+                  I love the convenience and variety that they offers. The
+                  real-time order tracking is such a thoughtful feature—it
+                  ensures I never have to wonder about my meal's status.
+                </p>
+                <div class="customer__card__footer">
+                  <img src="assets/customer-2.jpg" alt="customer" />
+                  <div>
+                    <h4>Rajesh Patel</h4>
+                    <h5>Software Engineer</h5>
+                    <div class="customer__rating">
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="customer__card">
+                <div class="customer__card__header">
+                  <div>Verified Purchase</div>
+                  <span>23 Nov 2024</span>
+                </div>
+                <p>
+                  The dishes are not only flavorful but also packed with
+                  nutrients, which is essential for my active lifestyle. It's a
+                  fantastic option for anyone who values healthy eating!
+                </p>
+                <div class="customer__card__footer">
+                  <img src="assets/customer-3.jpg" alt="customer" />
+                  <div>
+                    <h4>Emily Brown</h4>
+                    <h5>Fitness Trainer</h5>
+                    <div class="customer__rating">
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-half-fill"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="customer__swiper__controls">
+            <button class="btn swiper-prev">
+              <i class="ri-arrow-left-line"></i>
+            </button>
+            <button class="btn swiper-next">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+          <!-- ================= PURCHASE MODAL ================= -->
+        <div id="purchaseModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <img id="modalImg" src="">
+            <h2 id="modalName"></h2>
+            <p id="modalPrice"></p>
+
+           <label>Quantity</label>
+            <input type="number" id="modalQty" value="1" min="1" onchange="updateTotal()">
+
+            <p class="total">Total: ₱<span id="modalTotal"></span></p>
+
+            <label>Payment Method</label>
+            <select id="paymentMethod">
+              <option value="GCash">GCash</option>
+              <option value="Cash on Delivery">Cash on Delivery</option>
+              <option value="Pay at Store">Pay at Store</option>
+            </select>
+
+
+            <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+
+          </div>
+        </div>
+
+        <!-- ================= CART SIDEBAR ================= -->
+        <!-- ================= CART BUTTON (DIRECT TO ORDER HISTORY) ================= -->
+          <button class="open-cart-btn" onclick="openOrders()">🛒</button>
+
+          <!-- ================= ORDER HISTORY MODAL ================= -->
+          <div id="ordersModal" class="modal">
+            <div class="modal-content history-modal">
+              <span class="close" onclick="closeOrders()">&times;</span>
+              <h2>Order History</h2>
+
+              <div id="ordersList">
+                <p class="empty-history">No previous orders found.</p>
+              </div>
+            </div>
+          </div>
+    <!-- CHATBOT WIDGET -->
+      <div class="chatbot">
+        <div class="chatbot-header">
+          <span>Chat with Us</span>
+          <button class="chatbot-close" onclick="toggleChatbot()">×</button>
+        </div>
+
+        <div class="chatbot-body" id="chatbotBody">
+          <div class="chatbot-message bot">
+            Hello! 👋 <br><br>
+
+            Welcome to <b>Kusina sa Tagbina</b>! <br><br>
+
+            We appreciate your message! We're currently assisting other customers, but we’ll respond as soon as possible. In the meantime, here’s some quick info: <br><br>
+
+            🛒 <b>We offer:</b> Chicken Adobo, Sinigang na Baboy, Pork Humba, Tinolang Manok, Bicol Express, Pork Sisig, and other Filipino favorites <br>
+            🕒 <b>Store Hours:</b> Monday – Sunday, 8:00 AM – 6:00 PM <br>
+            📍 <b>Location:</b> Near 7/11, Poblacion, Tagbina, Surigao del Sur <br><br>
+
+            Thank you for your patience! ❤️
+          </div>
+        </div>
+
+        <div class="chatbot-input">
+          <input type="text" id="chatbotInput" placeholder="Type a message..." onkeypress="handleChat(event)">
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+
+      <button class="chatbot-button" onclick="toggleChatbot()">💬</button>
+
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="#" class="footer__logo">
+            <img src="assets/logo-dark.png" alt="logo" />
+          </a>
+          <p>
+            Experience fast delivery, easy pick-up, and a menu crafted to
+            satisfy every craving. Eat healthy, stay happy!
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Releases</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Social</h4>
+          <ul class="footer__links">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul class="footer__links">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Licenses</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+function toggleChatbot() {
+  const chat = document.querySelector(".chatbot");
+  chat.style.display = chat.style.display === "flex" ? "none" : "flex";
+}
+
+function handleChat(event) {
+  if (event.key === "Enter") {
+    sendMessage();
+  }
+}
+
+function sendMessage() {
+  const input = document.getElementById("chatbotInput");
+  const body = document.getElementById("chatbotBody");
+
+  if (input.value.trim() === "") return;
+
+  // Show user message
+  const userMsg = document.createElement("div");
+  userMsg.className = "chatbot-message user";
+  userMsg.textContent = input.value;
+  body.appendChild(userMsg);
+
+  // Auto bot reply after 700ms
+  setTimeout(() => {
+    const botMsg = document.createElement("div");
+    botMsg.className = "chatbot-message bot";
+    botMsg.innerHTML = `
+      Thank you for your message! 🙌 <br><br>
+      Our staff will respond shortly. For now, here’s a reminder: <br><br>
+      🛒 We offer phones, laptops, PC builds, repairs & accessories <br>
+      🕒 We're open 8:00 AM – 6:00 PM <br>
+      📍 Located near Palawan Pawnshop, Poblacion, Tagbina <br>
+    `;
+    body.appendChild(botMsg);
+
+    body.scrollTop = body.scrollHeight;
+  }, 700);
+
+  input.value = "";
+  body.scrollTop = body.scrollHeight;
+}
+</script>
+
+<script>
+/* =============================
+   GLOBAL VARIABLES
+============================= */
+let currentItem = {};
+
+/* =============================
+   OPEN ITEM PURCHASE MODAL
+============================= */
+document.querySelectorAll(".add-to-cart").forEach(btn => {
+  btn.addEventListener("click", () => {
+    currentItem = {
+      name: btn.dataset.name,
+      price: parseFloat(btn.dataset.price),
+      img: btn.dataset.img
+    };
+
+    document.getElementById("modalName").textContent = currentItem.name;
+    document.getElementById("modalPrice").textContent = "₱" + currentItem.price;
+    document.getElementById("modalImg").src = currentItem.img;
+    document.getElementById("modalQty").value = 1;
+    document.getElementById("modalTotal").textContent = currentItem.price;
+
+    document.getElementById("purchaseModal").style.display = "flex";
+  });
+});
+
+/* =============================
+   UPDATE TOTAL PRICE
+============================= */
+function updateTotal() {
+  const qty = document.getElementById("modalQty").value;
+  document.getElementById("modalTotal").textContent = currentItem.price * qty;
+}
+
+/* =============================
+   CLOSE PURCHASE MODAL
+============================= */
+function closeModal() {
+  document.getElementById("purchaseModal").style.display = "none";
+}
+
+/* =============================
+   SAVE ORDER TO LOCAL STORAGE
+============================= */
+function saveOrderToHistory(order) {
+  let history = JSON.parse(localStorage.getItem("orderHistory")) || [];
+  history.push(order);
+  localStorage.setItem("orderHistory", JSON.stringify(history));
+}
+
+/* =============================
+   PLACE ORDER
+============================= */
+function placeOrder() {
+  const qty = parseInt(document.getElementById("modalQty").value);
+  const payment = document.getElementById("paymentMethod").value;
+
+  let order = {
+    name: currentItem.name,
+    qty: qty,
+    price: currentItem.price,
+    total: currentItem.price * qty,
+    payment: payment,
+    date: new Date().toLocaleString()
+  };
+
+  saveOrderToHistory(order);
+
+  alert("Order placed successfully!");
+  closeModal();
+}
+
+/* =============================
+   LOAD ORDER HISTORY INTO MODAL
+============================= */
+function loadOrderHistory() {
+  let history = JSON.parse(localStorage.getItem("orderHistory")) || [];
+  let container = document.getElementById("ordersList");
+
+  if (history.length === 0) {
+    container.innerHTML = `<p class="empty-history">No previous orders found.</p>`;
+    return;
+  }
+
+  container.innerHTML = "";
+
+  history.forEach(order => {
+    container.innerHTML += `
+      <div class="order-history-card">
+        <h4>${order.name} (x${order.qty})</h4>
+        <p>Price: ₱${order.price}</p>
+        <p>Total: <strong>₱${order.total}</strong></p>
+        <p>Payment Method: ${order.payment}</p>
+        <small>${order.date}</small>
+      </div>
+    `;
+  });
+}
+
+/* =============================
+   OPEN ORDER HISTORY MODAL
+============================= */
+function openOrders() {
+  loadOrderHistory();
+  document.getElementById("ordersModal").style.display = "flex";
+}
+
+/* =============================
+   CLOSE ORDER HISTORY MODAL
+============================= */
+function closeOrders() {
+  document.getElementById("ordersModal").style.display = "none";
+}
+
+/* =============================
+   CLICK OUTSIDE MODAL TO CLOSE
+============================= */
+window.onclick = function(event) {
+  let ordersModal = document.getElementById("ordersModal");
+  let purchaseModal = document.getElementById("purchaseModal");
+
+  if (event.target === ordersModal) {
+    ordersModal.style.display = "none";
+  }
+  if (event.target === purchaseModal) {
+    purchaseModal.style.display = "none";
+  }
+};
+</script>
+
+
+
+  </body>
+</html>
